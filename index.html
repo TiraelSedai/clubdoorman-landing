@@ -13,15 +13,12 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Keep this or replace with SVGs if preferred/unavailable -->
-    <!-- Using SVGs inline in the body for reliability if fontawesome script fails/is not real -->
 </head>
 
 <body>
@@ -37,6 +34,7 @@
         </div>
     </nav>
 
+    <main>
     <header class="hero">
         <div class="container hero-content">
             <div class="hero-text">
@@ -182,6 +180,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <footer id="contact">
         <div class="container footer-content">
