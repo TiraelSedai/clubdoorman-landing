@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Швейцар - антиспам бот для Telegram</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <meta name="description"
+        content="Продвинутая защита для ваших Telegram чатов. Искусственный интеллект, анализ профилей и умная модерация.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Keep this or replace with SVGs if preferred/unavailable -->
+    <!-- Using SVGs inline in the body for reliability if fontawesome script fails/is not real -->
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Швейцар</div>
+            <div class="nav-links">
+                <a href="#features">Возможности</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="https://t.me/TiraelSedai" class="btn btn-sm">Связаться</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Интеллектуальная защита ваших чатов</h1>
+                <p>Швейцар использует множество эвристик, алгоритмы машинного обучения и конечно же AI, обеспечивая
+                    чистоту
+                    и порядок в вашем сообществе.</p>
+                <div class="cta-group">
+                    <a href="#pricing" class="btn btn-primary">Подключить бота</a>
+                    <a href="#features" class="btn btn-secondary">Узнать больше</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract visual or bot interface mockup could go here -->
+                <div class="shield-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="trusted-by" class="trusted-section">
+        <div class="container">
+            <h2>Нам доверяют</h2>
+            <div class="trusted-logos">
+                <div class="client-logo">
+                    <img src="clients/edinorog.jpg" alt="The Edinorog" loading="lazy">
+                </div>
+                <div class="client-logo">
+                    <img src="clients/rational_answer.jpg" alt="Rational Answer | Павел Комаровский" loading="lazy">
+                </div>
+                <div class="client-logo">
+                    <img src="clients/startup_of_the_day.jpg" alt="Стартап дня. Александр Горный" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Почему Швейцар?</h2>
+                <p>Не просто фильтр слов. Разработано для себя и на совесть, потому что терпеть спамеров больше нет сил.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Intelligent Core -->
+                <div class="feature-card">
+                    <div class="icon">🧠</div>
+                    <h3>Умный анализ (AI)</h3>
+                    <p>Бот «читает» сообщения как человек, понимая контекст, сарказм и скрытый спам, который пропускают
+                        обычные фильтры.</p>
+                </div>
+
+                <!-- Visual & Bio -->
+                <div class="feature-card">
+                    <div class="icon">👁️</div>
+                    <h3>Анализ профиля</h3>
+                    <p>Проверяет фото и описание профиля на наличие рекламы, крипто-скама и эротики еще до того, как
+                        спамер начнет писать.</p>
+                </div>
+
+                <!-- Anti-Evasion -->
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Защита от обхода</h3>
+                    <p>Распознает попытки скрыть слова (homoglyphs), замену букв, использование редких символов и
+                        emoji-флуд.</p>
+                </div>
+
+                <!-- Smart Admin -->
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Человечный подход</h3>
+                    <p>Швейцар банит только если уверен на 100%. В остальных случаях он просто скрывает сообщение.
+                        Окончательное решение о бане всегда за админом.</p>
+                </div>
+
+                <!-- Reputation -->
+                <div class="feature-card">
+                    <div class="icon">⭐</div>
+                    <h3>Система репутации</h3>
+                    <p>Завсегдатаи чата избавлены от проверок. Бот запоминает хорошую историю сообщений и не беспокоит
+                        доверенных участников.</p>
+                </div>
+
+                <!-- Channel Control -->
+                <div class="feature-card">
+                    <div class="icon">📢</div>
+                    <h3>Фильтр каналов</h3>
+                    <p>Блокирует попытки писать от имени каналов (рекламный спам), но пропускает важных инфлюенсеров.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Простые и честные тарифы</h2>
+            </div>
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Базовый</h3>
+                        <div class="price">Бесплатно</div>
+                        <p>Для небольших чатов и базовой защиты</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> Базовая капча</li>
+                        <li><span class="check">✓</span> Проверка стоп-слов</li>
+                        <li><span class="check">✓</span> Машинное обучение на страже спокойствия</li>
+                        <li><span class="check">✓</span> Просто добавьте бота админом</li>
+                    </ul>
+                    <a href="https://t.me/clubdoormanbot" class="btn btn-outline">Добавить</a>
+                </div>
+
+                <!-- Paid Tier -->
+                <div class="pricing-card popular">
+                    <div class="badge">Рекомендуем</div>
+                    <div class="card-header">
+                        <h3>PRO</h3>
+                        <div class="price">1000 ₽ <span class="period">/мес</span></div>
+                        <p>Максимальная защита и поддержка</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> <strong>Все функции Базового</strong></li>
+                        <li><span class="check">✓</span> Глубокий AI анализ сообщений</li>
+                        <li><span class="check">✓</span> Анализ фото и био профиля</li>
+                        <li><span class="check">✓</span> Единственный способ получить поддержку в чате</li>
+                        <li><span class="check">✓</span> Цена ниже конкурентов</li>
+                    </ul>
+                    <a href="https://t.me/TiraelSedai" class="btn btn-primary">Подключить PRO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h4>Швейцар</h4>
+                <p>Чистота вашего чата — наша забота.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ClubDoorman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
