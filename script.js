@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Optional: Add simple scroll animation for elements coming into view
     const observerOptions = {
         threshold: 0.1
     };
@@ -36,9 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Add visible class styling dynamically or in CSS
-    // For now, let's just use inline styles intervention via JS for simplicity of this script
-    // Note: Better practice is to have .visible class in CSS, but this ensures it works out of the box
     const style = document.createElement('style');
     style.textContent = `
         .feature-card.visible, .pricing-card.visible {

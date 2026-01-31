@@ -84,7 +84,6 @@ p {
     padding: 0 var(--spacing-md);
 }
 
-/* Navbar */
 .navbar {
     position: sticky;
     top: 0;
@@ -123,7 +122,6 @@ p {
     color: var(--text-main);
 }
 
-/* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -172,12 +170,10 @@ p {
     background: rgba(88, 166, 255, 0.1);
 }
 
-/* Sections */
 section {
     padding: var(--spacing-xl) 0;
 }
 
-/* Hero */
 .hero {
     padding: var(--spacing-xl) 0;
     position: relative;
@@ -223,7 +219,6 @@ section {
     animation: float 6s ease-in-out infinite;
 }
 
-/* Trusted By */
 .trusted-section {
     padding: var(--spacing-lg) 0;
     background: var(--bg-secondary);
@@ -274,7 +269,6 @@ section {
     object-fit: contain;
 }
 
-/* Features */
 .section-header {
     text-align: center;
     max-width: 700px;
@@ -305,10 +299,8 @@ section {
     margin-bottom: var(--spacing-sm);
 }
 
-/* Pricing */
 .pricing-section {
     background: var(--bg-secondary);
-    /* Alternating background */
 }
 
 .pricing-grid {
@@ -393,7 +385,6 @@ section {
     color: var(--text-main);
 }
 
-/* Footer */
 footer {
     padding: var(--spacing-xl) 0 var(--spacing-md);
     border-top: 1px solid var(--border);
@@ -433,7 +424,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Animations */
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -448,7 +438,6 @@ footer {
     }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -471,9 +460,27 @@ footer {
         display: none;
     }
 
-    /* Simplified mobile nav for now */
-
     .trusted-logos {
         gap: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .pricing-card {
+        padding: var(--spacing-md);
+    }
+
+    .price {
+        font-size: 2.25rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
     }
 }
