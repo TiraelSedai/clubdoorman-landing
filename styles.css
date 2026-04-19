@@ -620,16 +620,6 @@ h1, h2, h3, h4 {
   text-align: center;
   position: relative;
 }
-.manifesto-mark {
-  display: block;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 120px;
-  line-height: 0.6;
-  color: var(--tg-blue);
-  opacity: 0.35;
-  margin-bottom: 12px;
-  height: 48px;
-}
 .manifesto p {
   font-size: clamp(20px, 2.2vw, 26px);
   line-height: 1.4;
