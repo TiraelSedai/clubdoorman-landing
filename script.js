@@ -10,4 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const themeToggle = document.querySelector('.nav-theme');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const root = document.documentElement;
+            const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', next);
+            try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+    }
 });
